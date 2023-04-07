@@ -1,15 +1,15 @@
 export default function Home() {
   return (
-    <div className="bg-indigo-950">
-      <header className=" py-4 shadow">
+    <div>
+      <header className="relative z-20 py-4 shadow">
         <div className="mx-auto max-w-7xl px-4">
           <nav className="flex w-full items-center justify-between px-4 py-4 text-xl font-medium md:px-8">
             <img src="/assets/logo.png" width={195} height={74} alt="Logo" />
             <div className="hidden md:flex">
-              <a href="#" className="mx-4">
+              <a href="#feature" className="mx-4">
                 Feature
               </a>
-              <a href="#" className="mx-4">
+              <a href="#community" className="mx-4">
                 Community
               </a>
             </div>
@@ -25,11 +25,10 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className="main">
         {/* 卡片 */}
-        <div className=" flex flex-row items-center justify-around">
-          <div className="relative flex flex-col">
-            <img src="/assets/bg_hero.png" className="absolute right-0 top-0 object-contain" />
+        <div className="hero">
+          <div className="z-10 flex flex-col">
             <p className="intro">
               A DECENTRALIZED MULTI-
               <br />
@@ -37,18 +36,19 @@ export default function Home() {
             </p>
             <p className="application">APPLICATION</p>
             <div className="divide"></div>
-            <p>join WhiteList</p>
+            {/* <p>join WhiteList</p> */}
           </div>
-          <div>
+          <div className="z-10">
             <img src="/assets/phone.png" width={'334px'} height={'680px'} />
           </div>
+          <img className="absolute bottom-0 h-auto" src="/assets/bg_hero.png" />
         </div>
 
-        <div className="feature">
+        <div id="feature" className="feature">
           <p className="title">Features</p>
           <div className="box">
             <div className="item">
-              <img src="/assets/web3.png" />
+              <img src="/assets/ai.png" />
               <p className="tip">
                 Web3 Digital
                 <br /> Distribution
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             <div className="item">
-              <img src="/assets/social.png" />
+              <img src="/assets/earn.png" />
               <p className="tip">
                 Decentralized
                 <br /> Social Network
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
 
             <div className="item">
-              <img src="/assets/web3.png" />
+              <img src="/assets/earn.png" />
               <p className="tip">
                 Watch to
                 <br /> Earn
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="community">
+        <div id="community" className="community">
           <p className="title">Community</p>
           <div className="content">
             <a href="https://t.me/evt_protocol" target="_blank" rel="noreferrer">
@@ -103,10 +103,10 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="mt-8 bg-indigo-950 py-4">
+      <footer className="footer py-8">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between">
-            <p className="font-medium text-gray-800">&copy; 2022 All rights reserved.</p>
+            <p className="font-medium text-white">&copy; 2022 All rights reserved.</p>
           </div>
         </div>
       </footer>

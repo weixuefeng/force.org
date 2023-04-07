@@ -2,7 +2,16 @@ body {
   background-color: #0c012c;
   color: white;
 }
-
+.main {
+  background-color: #120635;
+  .hero {
+    @apply relative bg-no-repeat;
+    @apply flex flex-row items-center justify-around;
+    .hero-img {
+      @apply absolute left-0 top-0 object-contain;
+    }
+  }
+}
 .header-pc {
   @apply flex flex-grow justify-between;
   .end {
@@ -14,38 +23,13 @@ body {
   min-height: 100vh;
   padding: 0 0.5rem;
 }
-.line-title::before {
-  content: '';
-  display: inline-block;
-  width: 2px;
-  height: 4rem;
-  border-left: 2px solid black;
-  margin-right: 10px;
-  vertical-align: middle;
-  margin-bottom: 15px;
-}
-.hero {
-  @apply pb-20 pt-20 sm:pb-40 sm:pt-20;
-  .title {
-    @apply font-gabana text-6xl sm:text-8xl;
-  }
-  .content {
-    @apply font-pop-medium mt-20  text-3xl tracking-widest sm:text-4xl;
-  }
-}
-.hero-content {
-  @apply flex flex-col;
-  .left {
-  }
-  .right {
-  }
-}
+
 .intro {
   @apply text-5xl;
 }
 
 .application {
-  @apply text-5xl;
+  @apply mt-4 text-5xl;
   color: rgba(212, 49, 216, 1);
 }
 .divide {
@@ -64,12 +48,14 @@ body {
     @apply grid grid-flow-col grid-cols-2 grid-rows-2 gap-8 p-10;
     .item {
       @apply relative mt-20 flex flex-col items-center p-20 text-center;
-      @apply border-2 border-l-pink-500 border-r-purple-900;
+      border-radius: 2rem;
+      border: 2px solid;
+      border-image: linear-gradient(90deg, rgba(222, 36, 226, 1), rgba(57, 21, 246, 1)) 2 2;
       .tip {
-        @apply text-5xl;
+        @apply mt-8 text-5xl;
       }
       .desc {
-        @apply text-4xl;
+        @apply mt-14 text-4xl;
       }
       img {
         @apply absolute -top-24 h-48 w-48;
@@ -79,7 +65,7 @@ body {
 }
 
 .community {
-  @apply flex flex-col items-center;
+  @apply mt-32 flex flex-col items-center;
   .title {
     @apply text-7xl;
   }
@@ -92,5 +78,6 @@ body {
 }
 
 .footer {
+  background-color: #0c012c;
   @apply text-base text-black;
 }

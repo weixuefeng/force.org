@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'class', // 'media' is the default, change to 'class' if you want to use dark mode in with class names
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/assets/bg_hero.png')",
+      },
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
