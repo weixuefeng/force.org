@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Gabana-Bold';
+  src: url('/fonts/Gabana-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-gabana {
+  font-family: 'Gabana-Bold', sans-serif;
+}
+.font-pop-medium {
+  font-family: 'Poppins-Medium', sans-serif;
+}
+.font-pop-regular {
+  font-family: 'Poppins-Regular', sans-serif;
+}

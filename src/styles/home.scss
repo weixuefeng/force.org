@@ -1,0 +1,96 @@
+body {
+  background-color: #0c012c;
+  color: white;
+}
+
+.header-pc {
+  @apply flex flex-grow justify-between;
+  .end {
+    @apply flex justify-around;
+  }
+}
+.container {
+  @apply flex flex-col;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+}
+.line-title::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 4rem;
+  border-left: 2px solid black;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+.hero {
+  @apply pb-20 pt-20 sm:pb-40 sm:pt-20;
+  .title {
+    @apply font-gabana text-6xl sm:text-8xl;
+  }
+  .content {
+    @apply font-pop-medium mt-20  text-3xl tracking-widest sm:text-4xl;
+  }
+}
+.hero-content {
+  @apply flex flex-col;
+  .left {
+  }
+  .right {
+  }
+}
+.intro {
+  @apply text-5xl;
+}
+
+.application {
+  @apply text-5xl;
+  color: rgba(212, 49, 216, 1);
+}
+.divide {
+  @apply mb-8 mt-10;
+  @apply bg-gradient-to-r from-pink-600 to-blue-800;
+  height: 0.17rem;
+  width: 100%;
+}
+
+.feature {
+  @apply flex flex-col items-center;
+  .title {
+    @apply text-7xl;
+  }
+  .box {
+    @apply grid grid-flow-col grid-cols-2 grid-rows-2 gap-8 p-10;
+    .item {
+      @apply relative mt-20 flex flex-col items-center p-20 text-center;
+      @apply border-2 border-l-pink-500 border-r-purple-900;
+      .tip {
+        @apply text-5xl;
+      }
+      .desc {
+        @apply text-4xl;
+      }
+      img {
+        @apply absolute -top-24 h-48 w-48;
+      }
+    }
+  }
+}
+
+.community {
+  @apply flex flex-col items-center;
+  .title {
+    @apply text-7xl;
+  }
+  .content {
+    @apply flex flex-row;
+    img {
+      @apply mx-10 my-10 w-20 sm:mx-20 sm:my-20;
+    }
+  }
+}
+
+.footer {
+  @apply text-base text-black;
+}
