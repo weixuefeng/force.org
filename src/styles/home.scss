@@ -10,6 +10,11 @@ body {
     .hero-img {
       @apply absolute left-0 top-0 object-contain;
     }
+    .join {
+      width: fit-content;
+      @apply bg-purple-600 p-2 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50;
+      background-image: linear-gradient(to right, #de24e2, #3915f6);
+    }
   }
 }
 .header-pc {
@@ -40,7 +45,7 @@ body {
 }
 
 .feature {
-  @apply flex flex-col items-center;
+  @apply mt-8 flex flex-col items-center;
   .title {
     @apply text-5xl  md:text-7xl;
   }
