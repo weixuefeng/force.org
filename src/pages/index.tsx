@@ -13,14 +13,14 @@ export default function Home() {
                 Community
               </a>
             </div>
-            <button className="md:hidden">
+            {/* <button className="md:hidden">
               <svg viewBox="0 0 20 20" fill="currentColor" className="menu h-6 w-6">
                 <path
                   fillRule="evenodd"
                   d="M1 4.75A.75.75 0 0 1 1.75 4h16.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 4.75zm0 6A.75.75 0 0 1 1.75 10h16.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1-.75-.75zm0 6A.75.75 0 0 1 1.75 16h16.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1-.75-.75z"
                 ></path>
               </svg>
-            </button>
+            </button> */}
           </nav>
         </div>
       </header>
@@ -38,7 +38,7 @@ export default function Home() {
             <div className="divide"></div>
             {/* <p>join WhiteList</p> */}
           </div>
-          <div className="z-10">
+          <div className="z-10 hidden md:flex">
             <img src="/assets/phone.png" width={'334px'} height={'680px'} />
           </div>
           <img className="absolute bottom-0 h-auto" src="/assets/bg_hero.png" />
@@ -48,7 +48,7 @@ export default function Home() {
           <p className="title">Features</p>
           <div className="box">
             <div className="item">
-              <img src="/assets/ai.png" />
+              <img src="/assets/web3.png" />
               <p className="tip">
                 Web3 Digital
                 <br /> Distribution
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             <div className="item">
-              <img src="/assets/earn.png" />
+              <img src="/assets/social.png" />
               <p className="tip">
                 Decentralized
                 <br /> Social Network

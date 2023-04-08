@@ -25,11 +25,11 @@ body {
 }
 
 .intro {
-  @apply text-5xl;
+  @apply text-3xl md:text-5xl;
 }
 
 .application {
-  @apply mt-4 text-5xl;
+  @apply mt-4 text-3xl md:text-5xl;
   color: rgba(212, 49, 216, 1);
 }
 .divide {
@@ -42,20 +42,20 @@ body {
 .feature {
   @apply flex flex-col items-center;
   .title {
-    @apply text-7xl;
+    @apply text-5xl  md:text-7xl;
   }
   .box {
-    @apply grid grid-flow-col grid-cols-2 grid-rows-2 gap-8 p-10;
+    @apply grid grid-cols-1 p-10 md:grid-cols-2 md:gap-8;
     .item {
-      @apply relative mt-20 flex flex-col items-center p-20 text-center;
+      @apply relative mt-24 flex flex-col items-center p-20 text-center md:mt-20;
       border-radius: 2rem;
       border: 2px solid;
       border-image: linear-gradient(90deg, rgba(222, 36, 226, 1), rgba(57, 21, 246, 1)) 2 2;
       .tip {
-        @apply mt-8 text-5xl;
+        @apply mt-8 text-3xl md:text-5xl;
       }
       .desc {
-        @apply mt-14 text-4xl;
+        @apply mt-14 text-2xl md:text-4xl;
       }
       img {
         @apply absolute -top-24 h-48 w-48;
@@ -67,7 +67,7 @@ body {
 .community {
   @apply mt-32 flex flex-col items-center;
   .title {
-    @apply text-7xl;
+    @apply text-5xl md:text-7xl;
   }
   .content {
     @apply flex flex-row;
