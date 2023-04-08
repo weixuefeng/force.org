@@ -115,7 +115,7 @@ export default function Home() {
             <a href="https://t.me/force_app" target="_blank" rel="noreferrer">
               <img src="assets/telegram.png" />
             </a>
-            <a href="https://twitter.com/force_app" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/forcewallet" target="_blank" rel="noreferrer">
               <img src="assets/twitter.png" />
             </a>
           </div>
