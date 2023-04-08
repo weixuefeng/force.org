@@ -6,7 +6,7 @@ export default function Home() {
     openModal()
   }
 
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
