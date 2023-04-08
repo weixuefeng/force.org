@@ -1,6 +1,7 @@
 body {
   background-color: #0c012c;
   color: white;
+  font-family: 'Nunito ExtraBold';
 }
 .main {
   background-color: #120635;
@@ -12,7 +13,8 @@ body {
     }
     .join {
       width: fit-content;
-      @apply bg-purple-600 p-2 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50;
+
+      @apply mb-8 bg-purple-600 p-2 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50;
       background-image: linear-gradient(to right, #de24e2, #3915f6);
     }
   }
@@ -30,11 +32,11 @@ body {
 }
 
 .intro {
-  @apply text-3xl md:text-5xl;
+  @apply font-nunito-bold text-3xl md:text-5xl;
 }
 
 .application {
-  @apply mt-4 text-3xl md:text-5xl;
+  @apply font-nunito-bold mt-4 text-3xl md:text-5xl;
   color: rgba(212, 49, 216, 1);
 }
 .divide {
@@ -47,7 +49,7 @@ body {
 .feature {
   @apply mt-8 flex flex-col items-center;
   .title {
-    @apply text-5xl  md:text-7xl;
+    @apply font-nunito-bold  text-5xl md:text-7xl;
   }
   .box {
     @apply grid grid-cols-1 p-10 md:grid-cols-2 md:gap-8;
@@ -57,7 +59,7 @@ body {
       border: 2px solid;
       border-image: linear-gradient(90deg, rgba(222, 36, 226, 1), rgba(57, 21, 246, 1)) 2 2;
       .tip {
-        @apply mt-8 text-3xl md:text-5xl;
+        @apply font-nunito-bold mt-8 text-3xl md:text-5xl;
       }
       .desc {
         @apply mt-14 text-2xl md:text-4xl;
@@ -72,7 +74,7 @@ body {
 .community {
   @apply mt-32 flex flex-col items-center;
   .title {
-    @apply text-5xl md:text-7xl;
+    @apply font-nunito-bold text-5xl md:text-7xl;
   }
   .content {
     @apply flex flex-row;

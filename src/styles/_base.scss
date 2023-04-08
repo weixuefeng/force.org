@@ -16,6 +16,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Nunito-ExtraBold';
+  src: url('/fonts/Nunito-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .font-gabana {
   font-family: 'Gabana-Bold', sans-serif;
@@ -25,4 +31,7 @@
 }
 .font-pop-regular {
   font-family: 'Poppins-Regular', sans-serif;
+}
+.font-nunito-bold {
+  font-family: 'Nunito-ExtraBold', sans-serif;
 }
