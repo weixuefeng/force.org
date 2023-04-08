@@ -93,10 +93,10 @@ export default function Home() {
         <div id="community" className="community">
           <p className="title">Community</p>
           <div className="content">
-            <a href="https://t.me/evt_protocol" target="_blank" rel="noreferrer">
+            <a href="https://t.me/force_app" target="_blank" rel="noreferrer">
               <img src="assets/telegram.png" />
             </a>
-            <a href="https://twitter.com/evtprotocol" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/force_app" target="_blank" rel="noreferrer">
               <img src="assets/twitter.png" />
             </a>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
       <footer className="footer py-8">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between">
-            <p className="font-medium text-white">&copy; 2022 All rights reserved.</p>
+            <p className="font-medium text-white">&copy; 2023 All rights reserved.</p>
           </div>
         </div>
       </footer>
