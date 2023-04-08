@@ -53,9 +53,9 @@ export default function Home() {
             </p>
             <p className="application">APPLICATION</p>
             <div className="divide"></div>
-            <button className="join" onClick={showAlert}>
+            {/* <button className="join" onClick={showAlert}>
               Join WhiteList
-            </button>
+            </button> */}
           </div>
           <div className="z-10 hidden md:flex">
             <img src="/assets/phone.png" width={'334px'} height={'680px'} />

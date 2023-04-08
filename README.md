@@ -15,9 +15,11 @@ npm install -g pm2
 ### 首次部署指令
 
 ```
+git clone git@gitlab.weinvent.org:forcewallet/business/forcewallet.org.git
+cd forcewallet.org
 yarn
 yarn build
-pm2 start npm --name "evt-protocol-website" -- start
+pm2 start npm --name "forcewallet-website" -- start
 ```
 
 ### 更新部署:
@@ -26,7 +28,7 @@ pm2 start npm --name "evt-protocol-website" -- start
 git pull
 yarn
 yarn build
-pm2 restart evt-protocol-website
+pm2 restart forcewallet-website
 ```
 
 ### 如需更新启动端口，
@@ -37,10 +39,10 @@ pm2 restart evt-protocol-website
 
 ```
 server {
-    server_name {domin};
-    access_log    /var/log/nginx/{domin}.log;
+    server_name forcewallet.org;
+    access_log    /var/log/nginx/forcewallet.org.log;
     location / {
-        proxy_pass http://127.0.0.1:3000;
+        proxy_pass http://127.0.0.1:3001;
     }
 }
 ```
